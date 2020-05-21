@@ -1,0 +1,721 @@
+/*Import font from fonts.css*/
+@import url('./fonts.css');
+@import url('./partials/_variable.css');
+@import url('./partials/_global.css');
+
+/* basic */
+
+html,
+body {
+    scroll-behavior: smooth;
+}
+body{
+    font-family:  "Montserrat", sans-serif;
+}
+
+
+
+/* start navigation */
+
+
+
+.header_area .main-menu .navbar .navbar-brand {
+    padding: 0 0rem 0 0rem;
+}
+
+.header_area .main-menu .navbar {
+    padding: 0rem 1rem 0rem 0rem;
+    background-color: var(--bg-color-2) ;
+}
+
+.header_area .main-menu .nav-item .nav-link {
+    font: normal 500 15px/2px var(--monsterrat);
+    font-family: var(--montserrat);
+    text-transform: uppercase;
+    font-weight: 500;
+    padding: 1.7rem;
+    color: var(--title-color);
+    font-size: 11px;
+    letter-spacing: 1px;
+    font-weight: bold
+}
+
+.header_area .main-menu .navbar-nav {
+    background: var(--title-color);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.header_area .main-menu .navbar-nav a:hover {
+    background: var(--primary-color);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.logo-img {
+    width: 70px;
+    height: auto;
+}
+
+/* end navigation */
+
+/* home-area */
+
+@media (min-width: 640px) {
+
+    /*...desktop code goes here*/
+    
+    .site-main .site-banner {
+        width: 100%;
+        height: 650px;
+        background: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0)), url(../img/20200519_022749_0000.png); 
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .site-main .site-banner .banner-bg-img .img{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+       
+        
+    }
+    .site-main .site-banner .banner-image {
+        width: 15rem;
+        margin-left: -1.7rem;
+    }
+
+    .site-main .site-banner .text-1 {
+        justify-content: left;
+        align-items: left;
+        text-align: left;
+        padding: 2rem;
+        z-index: 2;
+        position: relative;
+    }
+    .banner-image-img {
+        width: 10rem;
+        height: 10rem;
+        background: url(../img/sports-logo-transparent.png);
+        background-position: center center;
+        background-size: cover;
+    }
+    .site-main .site-banner .company-name {
+        font-size: 4rem;
+        color: #fff;
+        letter-spacing: 1px;
+    }
+
+    .site-main .site-banner .tagline {
+        font-size: 1.5rem;
+        color: #fff;
+        letter-spacing: 1px;
+    }
+    .site-main .site-banner .some-text{
+        width: 60%;
+        line-height: 28px;
+        color: #fff;
+        font-size: 0.9rem;
+        letter-spacing: 1px;
+    }
+    .site-main .site-banner .btn {
+        margin: 20px auto;
+        font-size: 0.8rem;
+    }
+
+    .site-main .tournament-banner {
+        width: 100%;
+        height: auto;
+        background: #ec4849;
+        background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)), url(../img/img3.png);
+        background-position: center center;
+        background-size: cover;
+        padding-bottom: 5rem;
+        padding-top: 5rem;
+    }
+
+    .site-main .tournament-banner .box-1 {
+        width: 100%;
+        padding: 10rem 2rem 2rem 2rem;
+        display: flex;
+    }
+
+    .site-main .tournament-banner .box-1 .tournament-image {
+        width: 16rem;
+        height: 16rem;
+        background-image: url(../img/img4.png);
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        border-radius: 50%;
+    }
+
+    .site-main .tournament-banner .box-1 .content {
+        padding: 0rem 4rem 6rem 3rem;
+        text-align: right;        
+    }
+
+    .site-main .tournament-banner .box-1 .content .heading {
+        color: #fff;
+        text-align: right;
+        font-size: 2.1rem;
+    }
+
+    .site-main .tournament-banner .box-1 .content .text-2 {
+        color: #fff;
+        line-height: 32px;
+        text-align: right;
+        letter-spacing: 1px;
+    }
+
+    .site-main .about-us {
+        width: 100%;
+        height: auto;
+        background: #00002a ;
+    }
+    .site-main .about-us .box-2 {
+        width: 100%;
+        padding: 10rem 2rem 6rem 2rem;
+        display: flex;
+    }
+
+    .site-main .about-us .box-2 .lco-logo {
+        width: 16rem;
+        height: 16rem;
+        background-image: url(../img/sports-logo-template-for-a-basketball-tournament-2703e.png);
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        border-radius: 50%;
+    }
+
+    .site-main .about-us .box-2 .content {
+        padding: 0rem 4rem 2rem 3rem;
+    }
+    .site-main .about-us .box-2 .content .heading {
+        color: #fff;
+        font-size: 2.5rem;
+    }
+    .site-main .about-us .box-2 .content .text-2 {
+        color: #fff;
+        line-height: 32px;
+        letter-spacing: 1px;
+    }
+
+    .site-main .team-section {
+        width: 100%;
+        height: auto;
+        background: #00002a;
+        padding-bottom: 5rem;
+        padding-top: 5rem;
+
+    }
+
+    .site-main .team-section .heading {
+        font-size: 3rem;
+        color: #fff;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        letter-spacing: 1px;
+    }
+
+    .site-main .team-section .teams {
+        width: 60%;
+        margin: 2rem auto;
+        display: flex;
+        align-items: flex-start;
+        align-content: flex-start;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+
+    .site-main .team-section .teams #team {
+        margin: 4vh;
+        width: 100px;
+        height: 120px;
+        clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+        background: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0.7)), url(../img/img2.png);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-position: center center;
+        background-size: cover;
+    }
+    .site-main .team-section .teams #team p{
+        color: #fff;
+        margin-top: 55px;
+    }
+
+    .site-main .video-section {
+        width: 100%;
+        height: auto;
+        background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../img/img3.png);
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        background-position: center center;
+        background-size: cover;
+        margin: 0 auto;
+        padding-bottom: 5rem;
+        padding-top: 5rem;
+    }
+
+    .site-main .video-section .videos {
+        width: 100%;
+        height: auto;
+        padding: 8rem;
+    }
+
+    .site-main .video-section .video {
+        width: 70%;
+        height: auto;
+        outline: none;
+        margin: 0 auto;
+    }
+
+    .site-main .video-section .videos .text {
+        padding: 2rem;
+        color: #fff;
+        font-size: 2rem;
+    }
+
+    .site-main .faq-section {
+        width: 100%;
+        height: auto;
+        padding: 2rem;
+        background-color: #fff;
+    }
+
+    .site-main .faq-section .faq-title {
+        font-size: 2.6rem;
+        padding: 1rem 1rem 1rem 0rem;
+        color: #ff5200 ;
+        letter-spacing: 1px;
+    }
+
+    .site-main .faq-section .faq {
+        width: 100%;
+        height: auto;
+        padding: 2rem;
+        background-color: #fefcf6;
+        padding: 1rem;
+        border-radius: 5px;
+        border-left: 4px solid #ff5200 ;
+        margin: 2rem 2rem 2rem 0rem;
+        letter-spacing: 1px;
+    }
+
+    .site-main .faq-section .faq .question {
+        letter-spacing: 1px;
+        font-weight: bold;
+    }
+
+    .site-main .faq-section .faq .question span {
+        font-weight: bold;
+    }
+
+    .site-main .faq-section .faq .answer {
+        letter-spacing: 1px;
+        line-height: 26px;
+        margin: 0rem;
+    }
+
+    .site-main .faq-section .faq .answer span {
+        font-weight: bold;
+    }
+
+    .site-main .footer-section {
+        width: 100%;
+        height: 310px;
+        background-color: #00002a;
+    }
+    .site-main .footer-section .footer{
+        width: 100%;
+        display: flex;
+        top: 0;
+        left: -30px;
+        position: relative;
+    }
+    .site-main .footer-section .footer .list-1, .list-2, .list-3{
+        list-style: none;
+        color: #fff;
+        width: 320px;
+    }
+    .site-main .footer-section .footer .list-1 li:nth-child(1){
+        font-size: 1.7rem;
+        padding: 1rem 0rem 0.5rem 0rem;
+        line-height: 34px;
+    }
+    .site-main .footer-section .footer .list-2 li:nth-child(1){
+        font-size: 1.7rem;
+        padding: 1rem 0rem 0.5rem 0rem;
+    }
+    .site-main .footer-section .footer .list-3 li:nth-child(1){
+        font-size: 1.7rem;
+        padding: 1rem 0rem 0.5rem 0rem;
+    }
+    .site-main .footer-section .footer .list-1 li{
+        font-size: 0.9rem;
+        line-height: 25px;
+        letter-spacing: 1px;
+    }
+    .site-main .footer-section .footer .list-2 li{
+        font-size: 0.9rem;
+        padding: 0.8rem 0rem 0.8rem 0rem;
+        letter-spacing: 1px;
+    }
+    .site-main .footer-section .footer .list-2 li a{
+        text-decoration: none;
+        color: #fff;
+    }
+    .site-main .footer-section .footer .list-3 li{
+        font-size: 0.9rem;
+        padding: 0.8rem 0rem 0rem 0rem;
+        line-height: 25px;
+        letter-spacing: 1px;
+    }
+    .site-main .footer-section .footer .list-3 li i{
+        cursor: pointer;
+        padding: 0.4rem 0.5rem 0rem 0rem;
+    }
+
+    
+}
+
+
+@media (max-width: 640px) {
+
+    /*...mobile code goes here*/
+    
+
+    .site-main{
+        overflow-x: hidden;
+    }
+    .site-main .site-banner {
+        width: 100%;
+        height: auto;
+        background-color: #00002a;
+    }
+
+    .site-main .site-banner .site-title h3 {
+        padding-top: 25%;
+        font-weight: 500;
+        font-size: 4rem;
+
+    }
+
+    .site-main .site-banner .site-title h1 {
+        font-size: 1rem;
+    }
+
+    .banner-image {
+        width: 25rem;
+        height: 25rem;
+        background: url(../img/artimg-2-removebg-preview.png);
+        background-position: center center;
+        background-size: cover;
+        margin: 0 auto;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .site-main .site-banner .some-text{
+        width: 100%;
+        padding: 0.4rem 1rem 0rem 1rem;
+        line-height: 28px;
+        color: #fff;
+        font-size: 0.9rem;
+        margin: 0 auto;
+        letter-spacing: 1px;
+    }
+    .site-main .site-banner .text-1 {
+        margin: 0 auto;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+    }
+
+    .site-main .site-banner .company-name {
+        font-size: 4rem;
+        letter-spacing: 1px;
+        color: #fff;
+    }
+
+    .site-main .site-banner .tagline {
+        font-size: 1.5rem;
+        letter-spacing: 1px;
+        color: #fff;
+    }
+
+    .site-main .site-banner .btn {
+        margin: 20px auto;
+        font-size: 0.8rem;
+    }
+
+    .site-main .tournament-banner {
+        width: 100%;
+        height: auto;
+        background: #00002a;
+        background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.9)), url(../img/img3.png);
+        background-position: center center;
+        background-size: cover;
+        padding-bottom: 2rem;
+    }
+
+    .site-main .tournament-banner .box-1 {
+        width: 100%;
+        padding: 4rem 0.4rem 0.4rem 0.4rem;
+        
+    }
+
+    .site-main .tournament-banner .box-1 .tournament-image {
+        width: 12rem;
+        height: 12rem;
+        background-image: url(../img/img4.png);
+        background-position: 0 0;
+        background-size: cover;
+        background-repeat: no-repeat;
+        border-radius: 50%;
+        margin: 0 auto;
+    }
+
+    .site-main .tournament-banner .box-1 .content {
+        padding: 0rem 2rem 2rem 2rem;
+        text-align: center;
+    }
+
+    .site-main .tournament-banner .box-1 .content .heading {
+        color: #fff;
+        text-align: center;
+        font-size: 2.5rem;
+        overflow: hidden;
+    }
+
+    .site-main .tournament-banner .box-1 .content .text-2 {
+        color: #fff;
+        line-height: 30px;
+        text-align: center;
+    }
+
+    .site-main .about-us {
+        width: 100%;
+        height: auto;
+        background: #00002a;
+    }
+
+    .site-main .about-us .box-2 {
+        width: 100%;
+        padding: 2rem 0.4rem 0.4rem 0.4rem;
+    }
+
+    .site-main .about-us .box-2 .lco-logo {
+        width: 12rem;
+        height: 12rem;
+        background-image: url(../img/sports-logo-template-for-a-basketball-tournament-2703e.png);
+        background-position: 0 0;
+        background-size: cover;
+        background-repeat: no-repeat;
+        border-radius: 50%;
+        margin: 0 auto;
+    }
+
+    .site-main .about-us .box-2 .content {
+        padding: 2rem 2rem 2rem 2rem;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .site-main .about-us .box-2 .content .heading {
+        color: #fff;
+        font-size: 2.5rem;
+        text-align: center;
+        overflow: hidden;
+    }
+
+    .site-main .about-us .box-2 .content .text-2 {
+        color: #fff;
+        line-height: 30px;
+        text-align: center;
+    }
+
+    .site-main .team-section {
+        width: 100%;
+        height: auto;
+        background: #00002a;
+        padding-bottom: 2rem;
+    }
+
+    .site-main .team-section .heading {
+        font-size: 2rem;
+        color: #fff;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .site-main .team-section .teams {
+        width: 100%;
+        margin: 2rem auto;
+        display: flex;
+        align-items: flex-start;
+        align-content: flex-start;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .site-main .team-section .teams #team {
+        margin: 3vh;
+        width: 60px;
+        height: 60px;
+        clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+        background: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0.7)), url(../img/img2.png);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-position: center center;
+        background-size: cover;
+    }
+    .site-main .team-section .teams #team p{
+        color: #fff;
+        margin-top: 45px;
+        font-size: 9px;
+    }
+    .site-main .video-section {
+        width: 100%;
+        height: auto;
+        background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../img/img4.png);
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        background-position: center center;
+        background-size: cover;
+        margin: 0 auto;
+    }
+
+    .site-main .video-section .videos {
+        width: 100%;
+        height: auto;
+        padding: 2rem;
+    }
+
+    .site-main .video-section .video {
+        width: 90%;
+        height: auto;
+        outline: none;
+        margin: 0 auto;
+    }
+
+    .site-main .video-section .videos .text {
+        padding: 1rem;
+        color: #fff;
+        font-size: 1rem;
+    }
+
+    .site-main .faq-section {
+        width: 100%;
+        height: auto;
+        padding: 1rem;
+        background-color: #fff;
+    }
+
+    .site-main .faq-section .faq-title {
+        font-size: 2rem;
+        padding: 1rem 1rem 1rem 0rem;
+        color: #ff5200;
+    }
+
+    .site-main .faq-section .faq {
+        width: 100%;
+        height: auto;
+        padding: 2rem;
+        background-color: #fefcf6;
+        border-radius: 5px;
+        border-left: 4px solid #ff5200;
+        margin: 1rem 2rem 2rem 0rem;
+        font-size: 0.7rem;
+    }
+
+    .site-main .faq-section .faq .question {
+        letter-spacing: 1px;
+        font-weight: bold;
+    }
+
+    .site-main .faq-section .faq .question span {
+        font-weight: bold;
+    }
+
+    .site-main .faq-section .faq .answer {
+        letter-spacing: 1px;
+        line-height: 19px;
+        margin: 0rem;
+    }
+
+    .site-main .faq-section .faq .answer span {
+        font-weight: bold;
+    }
+    .site-main .footer-section {
+        width: 100%;
+        height: auto;
+        background-color: #00002a;
+        overflow: hidden;
+    }
+    .site-main .footer-section .footer{
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        top: 0;
+        left: -30px;
+        position: relative;
+    }
+    .site-main .footer-section .footer .list-1, .list-2, .list-3{
+        list-style: none;
+        color: #fff;
+        width: 200px;
+    }
+    .site-main .footer-section .footer .list-1 li:nth-child(1){
+        font-size: 1rem;
+        padding: 1rem 0rem 0.5rem 0rem;
+        line-height: 20px;
+    }
+    .site-main .footer-section .footer .list-2 li:nth-child(1){
+        font-size: 1rem;
+        padding: 1rem 0rem 0.5rem 1rem;
+    }
+    .site-main .footer-section .footer .list-3 li:nth-child(1){
+        font-size: 1rem;
+        padding: 1rem 0rem 0.5rem 0rem;
+    }
+    .site-main .footer-section .footer .list-1 li{
+        font-size: 0.4rem;
+        line-height: 15px;
+        letter-spacing: 1px;
+    }
+    .site-main .footer-section .footer .list-2 li{
+        font-size: 0.4rem;
+        padding: 0.8rem 0rem 0.2rem 1rem;
+        letter-spacing: 1px;
+    }
+    .site-main .footer-section .footer .list-2 li a{
+        text-decoration: none;
+        color: #fff;
+    }
+    .site-main .footer-section .footer .list-3 li{
+        font-size: 0.4rem;
+        padding: 0.8rem 0rem 0rem 0rem;
+        line-height: 15px;
+        letter-spacing: 1px;
+    }
+    .site-main .footer-section .footer .list-3 li i{
+        cursor: pointer;
+        padding: 0rem 0.3rem 0rem 0rem;
+        font-size: 0.7rem;
+    }
+}

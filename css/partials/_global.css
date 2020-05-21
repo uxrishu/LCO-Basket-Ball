@@ -1,0 +1,76 @@
+.title-text{
+    font: normal bold 50px/72px var(--montserrat);
+}
+.text-uppercase{
+    text-transform: uppercase;
+}
+.button{
+    padding: 0.8rem 2.5rem;
+    font: normal bold 16px/20px var(--montserrat);
+    position: relative;
+    border: 3px solid transparent;
+}
+.button.primary-button{
+    background: var(--gradient-color);
+    background-clip: padding-box;
+    color: #fff;
+    transition: background .6s ease;
+    box-shadow: var(--box-shadow);
+    border: 2px solid var(--primary-color) ;
+    border-radius: 0;
+}
+.button.tertiary-button{
+    background: var(--gradient-color-1);
+    background-clip: padding-box;
+    color: #ff5200;
+    transition: background .6s ease;
+    box-shadow: var(--box-shadow);
+}
+.button.tertiary-button:hover{
+    background: var(--gradient-color);
+    background-clip: padding-box;
+    color: #fff;
+    transition: background .6s ease-in-out;
+    box-shadow: var(--box-shadow);
+}
+/* .button.primary-button:hover{
+    background: #ec4849;
+    background-clip: padding-box;
+    color: #fff;
+} */
+.button.primary-button::after{
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    bottom: -2px;
+    right: -2px;
+    background: var(--gradient-color);
+    content: '';
+    z-index: -1;
+}
+.button.tetra-button{
+    border: 2px solid #ff5200;
+    background: transparent;
+    border-radius: 0;
+    background-clip: padding-box;
+    color: #fff;
+}
+.button.tetra-button:hover{
+    background: var(--gradient-color);
+    color: #fff;
+}
+.button.secondary-button{
+    background: #fff;
+    background-clip: padding-box;
+    transition: background .6s ease;
+}
+
+.button.secondary-button:hover{
+    background: var(--gradient-color);
+    color: #fff;
+    box-shadow: var(--box-shadow);
+}
+p.para{
+    color: var(--text-color);
+    font: normal 500 16px/25px var(--montserrat);
+}
